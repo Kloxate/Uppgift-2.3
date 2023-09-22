@@ -12,7 +12,7 @@ namespace School_work
             string Kilometer = Console.ReadLine();
             int Längd = int.Parse(Kilometer);
             int Dagar = int.Parse(Bilen);
-            int hyrperdag = Dagar * 500;
+            int hyrperdag = (Dagar - 1) * 500;
             int startavgift = + 300;
             int Totalt = hyrperdag + startavgift + Längd;
             Console.WriteLine("Ditt totala pris är, " + Totalt + "kr");
